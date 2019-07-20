@@ -1,13 +1,17 @@
 import "package:flutter/material.dart";
+import 'loader.dart';
+import 'dart:async';
+import 'homescreen.dart';
 void main()
 {
   runApp(
     MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        primaryColor: Colors.greenAccent, accentColor: Colors.yellowAccent),
       title: "GrasshopperX",
       home: SplashScreen(),
+      routes: <String, WidgetBuilder>{
+        '/HomeScreen': (BuildContext context) => new HomeScreen()
+      },
     )
   );
 }
@@ -18,10 +22,23 @@ class SplashScreen extends StatefulWidget{
 
 class _SplashScreenState extends State<SplashScreen>{
   @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    Timer(Duration(seconds: 8), navigationPage);
+  }
+  void navigationPage() {
+    Navigator.of(context).pushReplacementNamed('/HomeScreen');
+  }
+  @override
+
+
+  @override
   Widget build(BuildContext context) {
     // TODO: implement build
     return Scaffold(
-    body: Stack(
+    body:
+      Stack(
       fit: StackFit.expand,
       children: <Widget>[
         Container(
@@ -55,7 +72,7 @@ class _SplashScreenState extends State<SplashScreen>{
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
-                  LinearProgressIndicator(),
+                  Loader(),
                   Padding(padding: EdgeInsets.only(top: 20.0))
 
                 ],
@@ -70,19 +87,4 @@ class _SplashScreenState extends State<SplashScreen>{
 }
 
 /*In MATERIAL APP HOME:
-Scaffold(
-        appBar: AppBar(title: Text("Code with GrasshopperX",style: TextStyle(color: Colors.white),),backgroundColor: Colors.green[800],),
-        body:
-        Material(
-            color: Colors.white,
-            child: Center(
-              child: Text(
-                "HELLO",
-                textAlign: TextAlign.center,
-                textDirection: TextDirection.ltr,
-                textScaleFactor: 4.0,
-                style: TextStyle(color: Colors.green) ,
-              ),
-            )
-        )
-      )*/
+*/

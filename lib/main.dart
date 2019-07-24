@@ -42,7 +42,13 @@ class _SplashScreenState extends State<SplashScreen>{
       fit: StackFit.expand,
       children: <Widget>[
         Container(
-          decoration: BoxDecoration(color: Colors.green),
+          decoration: BoxDecoration(
+              gradient: LinearGradient(
+                begin: Alignment.topRight,
+                end: Alignment.bottomLeft,
+                colors: [Colors.blue,Colors.red]
+              ),
+          ),
         ),
         Column(
           mainAxisAlignment: MainAxisAlignment.start,
@@ -85,6 +91,3 @@ class _SplashScreenState extends State<SplashScreen>{
     );
   }
 }
-
-/*In MATERIAL APP HOME:
-*/

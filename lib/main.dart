@@ -7,11 +7,11 @@ void main()
   runApp(
     MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: "GrasshopperX",
-      home: SplashScreen(),
-      routes: <String, WidgetBuilder>{
-        '/HomeScreen': (BuildContext context) => new HomeScreen()
-      },
+      title: "",
+      home: SplashScreen()
+     // routes: <String, WidgetBuilder>{
+      //  '/HomeScreen': (BuildContext context) => new HomeScreen()
+
     )
   );
 }
@@ -46,7 +46,7 @@ class _SplashScreenState extends State<SplashScreen>{
               gradient: LinearGradient(
                 begin: Alignment.topRight,
                 end: Alignment.bottomLeft,
-                colors: [Colors.blue,Colors.red]
+                colors: [Colors.deepPurple,Colors.indigo,Colors.blue,Colors.green,Colors.yellow,Colors.orange,Colors.red]
               ),
           ),
         ),

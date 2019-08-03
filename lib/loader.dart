@@ -56,13 +56,13 @@ class _LoaderState extends State<Loader> with SingleTickerProviderStateMixin {
           children: <Widget>[
             Dot(
               radius: 30.0,
-              color: Colors.white,
+              color: Colors.lightGreenAccent,
             ),
             Transform.translate(
           offset:Offset(radius* cos(pi/4), radius*sin(pi/4)),
             child: Dot(
               radius: 5.0,
-              color: Colors.lightGreenAccent,
+              color: Colors.cyan[900],
             ),),
           Transform.translate(
       offset:Offset(radius* cos(2*pi/4), radius*sin(2*pi/4)),
@@ -80,7 +80,7 @@ class _LoaderState extends State<Loader> with SingleTickerProviderStateMixin {
       offset:Offset(radius* cos(4*pi/4), radius*sin(4*pi/4)),
   child: Dot(
   radius: 5.0,
-  color: Colors.cyan[800],
+  color: Colors.cyan[900],
   ),),
           Transform.translate(
       offset:Offset(radius* cos(5*pi/4), radius*sin(5*pi/4)),
@@ -92,19 +92,19 @@ class _LoaderState extends State<Loader> with SingleTickerProviderStateMixin {
               offset:Offset(radius* cos(6*pi/4), radius*sin(6*pi/4)),
               child: Dot(
                 radius: 5.0,
-                color: Colors.black45,
+                color: Colors.cyan[800],
               ),),
             Transform.translate(
               offset:Offset(radius* cos(7*pi/4), radius*sin(7*pi/4)),
               child: Dot(
                 radius: 5.0,
-                color: Colors.black45,
+                color: Colors.cyan[800],
               ),),
             Transform.translate(
               offset:Offset(radius* cos(8*pi/4), radius*sin(8*pi/4)),
               child: Dot(
                 radius: 5.0,
-                color: Colors.black45,
+                color: Colors.cyan[800],
               ),)
           ],
         ),

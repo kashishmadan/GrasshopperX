@@ -2,17 +2,16 @@ import "package:flutter/material.dart";
 import 'loader.dart';
 import 'dart:async';
 import 'homescreen.dart';
-void main()
-{
+void main() {
   runApp(
-    MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: "",
-      home: SplashScreen()
-     // routes: <String, WidgetBuilder>{
-      //  '/HomeScreen': (BuildContext context) => new HomeScreen()
-
-    )
+      MaterialApp(
+          debugShowCheckedModeBanner: false,
+          title: "",
+          home: SplashScreen(),
+          routes: <String, WidgetBuilder>{
+      '/HomeScreen': (BuildContext context) => new HomeScreen()
+      }
+      )
   );
 }
 class SplashScreen extends StatefulWidget{
@@ -67,13 +66,13 @@ class _SplashScreenState extends State<SplashScreen>{
                       color: Colors.deepPurple,
                       size: 50.0,),
                     ),
-                    Text("GrasshopperX",style: TextStyle(color: Colors.white,fontSize: 30, fontWeight:FontWeight.bold ),),
+                    Text("GrasshopperX",style: TextStyle(color: Colors.white,fontSize: 50, fontWeight:FontWeight.bold ),),
                     Padding(padding: EdgeInsets.only(top: 1.0))
                   ],
                 ),
               ),
             ),
-            Text("Coding for Everyone",style: TextStyle(color: Colors.white,fontSize: 18.0),),
+            Text("The coding app for beginners",style: TextStyle(color: Colors.white,fontSize: 18.0),),
             Expanded(
               flex: 1,
               child: Column(

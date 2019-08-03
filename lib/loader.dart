@@ -56,37 +56,37 @@ class _LoaderState extends State<Loader> with SingleTickerProviderStateMixin {
           children: <Widget>[
             Dot(
               radius: 30.0,
-              color: Colors.black,
+              color: Colors.white,
             ),
             Transform.translate(
           offset:Offset(radius* cos(pi/4), radius*sin(pi/4)),
             child: Dot(
               radius: 5.0,
-              color: Colors.black45,
+              color: Colors.lightGreenAccent,
             ),),
           Transform.translate(
       offset:Offset(radius* cos(2*pi/4), radius*sin(2*pi/4)),
   child: Dot(
   radius: 5.0,
-  color: Colors.black45,
+  color: Colors.cyan[900],
   ),),
           Transform.translate(
       offset:Offset(radius* cos(3*pi/4), radius*sin(3*pi/4)),
   child: Dot(
   radius: 5.0,
-  color: Colors.black45,
+  color: Colors.cyan[900],
   ),),
           Transform.translate(
       offset:Offset(radius* cos(4*pi/4), radius*sin(4*pi/4)),
   child: Dot(
   radius: 5.0,
-  color: Colors.black45,
+  color: Colors.cyan[800],
   ),),
           Transform.translate(
       offset:Offset(radius* cos(5*pi/4), radius*sin(5*pi/4)),
   child: Dot(
   radius: 5.0,
-  color: Colors.black45,
+  color: Colors.cyan[800],
   ),),
             Transform.translate(
               offset:Offset(radius* cos(6*pi/4), radius*sin(6*pi/4)),

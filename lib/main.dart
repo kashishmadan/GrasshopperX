@@ -38,8 +38,9 @@ class _SplashScreenState extends State<SplashScreen>{
       decoration: BoxDecoration(
         image: DecorationImage(
             image: AssetImage('assets/home_image_grasshopperx.jpeg'),
-            fit: BoxFit.cover
-        ) ,
+
+            fit:BoxFit.fitWidth
+        ),
       ),
       child: Center(
         child: CircularProgressIndicator(
@@ -47,6 +48,5 @@ class _SplashScreenState extends State<SplashScreen>{
         ),
       ),
     );
-
-
+  }
 }

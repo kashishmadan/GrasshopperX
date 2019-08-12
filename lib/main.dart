@@ -36,6 +36,7 @@ class _SplashScreenState extends State<SplashScreen>{
     // TODO: implement build
     return Container(
       child: HomeSceenImageAsset()
+
     );
   }
 }
@@ -44,8 +45,6 @@ class HomeSceenImageAsset extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
-    AssetImage assetImage=AssetImage('images/home_image_grasshopperx.jpeg');
-    Image image=Image(image: assetImage);
-    return Container(child: image,);
+    return Container(child: Image.asset('images/home_image_grasshopperx.jpeg', fit: BoxFit.fill));
   }
 }

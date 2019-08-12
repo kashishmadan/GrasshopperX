@@ -7,9 +7,9 @@ void main() {
           debugShowCheckedModeBanner: false,
           title: "",
           home: SplashScreen(),
-          routes: <String, WidgetBuilder>{
-      '/HomeScreen': (BuildContext context) => new HomeScreen()
-      }
+        //  routes: <String, WidgetBuilder>{
+     // '/HomeScreen': (BuildContext context) => new HomeScreen()
+   //   }
       )
   );
 }
@@ -35,18 +35,17 @@ class _SplashScreenState extends State<SplashScreen>{
   Widget build(BuildContext context) {
     // TODO: implement build
     return Container(
-      decoration: BoxDecoration(
-        image: DecorationImage(
-            image: AssetImage('assets/home_image_grasshopperx.jpeg'),
-
-            fit:BoxFit.fitWidth
-        ),
-      ),
-      child: Center(
-        child: CircularProgressIndicator(
-          valueColor: AlwaysStoppedAnimation<Color>(Colors.redAccent),
-        ),
-      ),
+      child: HomeSceenImageAsset()
     );
+  }
+}
+
+class HomeSceenImageAsset extends StatelessWidget{
+  @override
+  Widget build(BuildContext context) {
+    // TODO: implement build
+    AssetImage assetImage=AssetImage('images/home_image_grasshopperx.jpeg');
+    Image image=Image(image: assetImage);
+    return Container(child: image,);
   }
 }

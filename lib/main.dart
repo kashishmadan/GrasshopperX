@@ -28,15 +28,12 @@ class _SplashScreenState extends State<SplashScreen>{
   void navigationPage() {
     Navigator.of(context).pushReplacementNamed('/HomeScreen');
   }
-  @override
-
 
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
     return Container(
       child: HomeSceenImageAsset()
-
     );
   }
 }
@@ -45,6 +42,8 @@ class HomeSceenImageAsset extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
-    return Container(child: Image.asset('images/home_image_grasshopperx.jpeg', fit: BoxFit.fill));
+    return Container(child:
+    Image.asset('images/home_image_grasshopperx.jpeg', fit: BoxFit.fill)
+    );
   }
 }

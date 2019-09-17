@@ -42,8 +42,23 @@ class HomeSceenImageAsset extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
-    return Container(child:
-    Image.asset('images/home_image_grasshopperx.jpeg', fit: BoxFit.fill)
+    return Container(
+          decoration: BoxDecoration(
+            image: DecorationImage(
+              image: ExactAssetImage('images/home_image_grasshopperx.jpeg'),
+              fit: BoxFit.cover,
+            )
+          ),
+          child: Center(
+            child: Material(
+              type:MaterialType.transparency ,
+          child: Text("GrasshopperX",
+                style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 28.0,
+                    color: Colors.white)),
+          ),
+      )
     );
   }
 }

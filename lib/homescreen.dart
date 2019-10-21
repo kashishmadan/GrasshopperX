@@ -21,6 +21,39 @@ class _HomeScreenState extends State<HomeScreen> {
             label: Text('9',style: TextStyle(fontSize: 30)),
           )
         ],
+
+      ),
+      drawer: Drawer(
+        child: ListView(
+          children: <Widget>[
+            UserAccountsDrawerHeader(
+              accountName: Text('Kashish Madan',style: TextStyle(fontSize: 30,color: Colors.black),),
+              accountEmail: Text('Level 1',style: TextStyle(fontSize: 20,color: Colors.black54),),
+              decoration: BoxDecoration(color: Colors.lightGreenAccent,
+              ),
+            ),
+            ListTile(
+              title: Text('Dashboard',style: TextStyle(fontSize: 25,color: Colors.black),),
+              onTap: (){},
+            ),
+            ListTile(
+              title: Text('Messages',style: TextStyle(fontSize: 25,color: Colors.black),),
+              onTap: (){},
+            ),
+            ListTile(
+              title: Text('What is Code?',style: TextStyle(fontSize: 25,color: Colors.black),),
+              onTap: (){},
+            ),
+            ListTile(
+              title: Text('Fundamentals',style: TextStyle(fontSize: 25,color: Colors.black),),
+              onTap: (){},
+            ),
+            ListTile(
+              title: Text('Settings',style: TextStyle(fontSize: 25,color: Colors.black),),
+              onTap: (){},
+            ),
+          ],
+        ),
       ),
       body: Container(
         color: Colors.indigo[900],

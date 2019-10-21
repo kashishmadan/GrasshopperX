@@ -33,12 +33,12 @@ class _SplashScreenState extends State<SplashScreen>{
   Widget build(BuildContext context) {
     // TODO: implement build
     return Container(
-      child: HomeSceenImageAsset()
+      child: HomeScreenImageAsset()
     );
   }
 }
 
-class HomeSceenImageAsset extends StatelessWidget{
+class HomeScreenImageAsset extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     // TODO: implement build

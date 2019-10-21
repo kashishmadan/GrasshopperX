@@ -7,10 +7,10 @@ void main() {
           debugShowCheckedModeBanner: false,
           title: "",
           home: SplashScreen(),
-        //  routes: <String, WidgetBuilder>{
-     // '/HomeScreen': (BuildContext context) => new HomeScreen()
-   //   }
-      )
+        routes: <String, WidgetBuilder>{
+      '/HomeScreen': (BuildContext context) => new HomeScreen()
+     }
+      ),
   );
 }
 class SplashScreen extends StatefulWidget{

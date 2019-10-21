@@ -20,60 +20,60 @@ class _HomeScreenState extends State<HomeScreen> {
 
           children: <Widget>[
             Padding(
-              padding: const EdgeInsets.symmetric(vertical: 8.0, horizontal: 0.0),
-              child: Container(
-                height: 50,
-                color: Colors.white70,
-                child: const Center(child: Text('Entry A')),
-              ),
+              padding: const EdgeInsets.only(left:50.0,top:10.0,right:15.0,bottom:20.0 ),
+              child: FlatButton.icon(
+                  color: Colors.white70,
+                  highlightColor: Colors.blue,
+                  onPressed:(){},
+                  icon: Icon(Icons.child_friendly), label: Text('Beginner Code'))
             ),
             Padding(
-              padding: const EdgeInsets.symmetric(vertical: 8.0, horizontal: 0.0),
-              child: Container(
-                height: 100,
-                color: Colors.white70,
-                child: const Center(child: Text('Entry B')),
-              ),
+                padding: const EdgeInsets.only(left:15.0,top:10.0,right:50.0,bottom:20.0 ),
+                child: FlatButton.icon(
+                    color: Colors.white70,
+                    highlightColor: Colors.blue,
+                    onPressed:(){},
+                    icon: Icon(Icons.child_friendly), label: Text('Beginner Code'))
             ),
             Padding(
-              padding: const EdgeInsets.symmetric(vertical: 8.0,horizontal: 0.0),
-              child: Container(
-                height: 100,
-                color: Colors.white70,
-                child: const Center(child: Text('Entry C')),
-              ),
+                padding: const EdgeInsets.symmetric(vertical: 20.0, horizontal: 0.0),
+                child: FlatButton.icon(
+                    color: Colors.white70,
+                    highlightColor: Colors.blue,
+                    onPressed:(){},
+                    icon: Icon(Icons.child_friendly), label: Text('Beginner Code'))
             ),
             Padding(
-              padding: const EdgeInsets.symmetric(vertical: 8.0, horizontal: 0.0),
-              child: Container(
-                height: 100,
-                color: Colors.white70,
-                child: const Center(child: Text('Entry D')),
-              ),
+                padding: const EdgeInsets.symmetric(vertical: 20.0, horizontal: 0.0),
+                child: FlatButton.icon(
+                    color: Colors.white70,
+                    highlightColor: Colors.blue,
+                    onPressed:(){},
+                    icon: Icon(Icons.child_friendly), label: Text('Beginner Code'))
             ),
             Padding(
-              padding: const EdgeInsets.symmetric(vertical: 8.0, horizontal: 0.0),
-              child: Container(
-                height: 100,
-                color: Colors.white70,
-                child: const Center(child: Text('Entry E')),
-              ),
+                padding: const EdgeInsets.symmetric(vertical: 20.0, horizontal: 0.0),
+                child: FlatButton.icon(
+                    color: Colors.white70,
+                    highlightColor: Colors.blue,
+                    onPressed:(){},
+                    icon: Icon(Icons.child_friendly), label: Text('Beginner Code'))
             ),
             Padding(
-              padding: const EdgeInsets.symmetric(vertical: 8.0, horizontal: 0.0),
-              child: Container(
-                height: 100,
-                color: Colors.white70,
-                child: const Center(child: Text('Entry F')),
-              ),
+                padding: const EdgeInsets.symmetric(vertical: 20.0, horizontal: 0.0),
+                child: FlatButton.icon(
+                    color: Colors.white70,
+                    highlightColor: Colors.blue,
+                    onPressed:(){},
+                    icon: Icon(Icons.child_friendly), label: Text('Beginner Code'))
             ),
             Padding(
-              padding: const EdgeInsets.symmetric(vertical: 8.0, horizontal: 0.0),
-              child: Container(
-                height: 100,
-                color: Colors.white70,
-                child: const Center(child: Text('Entry G')),
-              ),
+                padding: const EdgeInsets.symmetric(vertical: 20.0, horizontal: 0.0),
+                child: FlatButton.icon(
+                    color: Colors.white70,
+                    highlightColor: Colors.blue,
+                    onPressed:(){},
+                    icon: Icon(Icons.child_friendly), label: Text('Beginner Code'))
             ),
           ],
         ),

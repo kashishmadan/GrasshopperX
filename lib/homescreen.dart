@@ -11,23 +11,19 @@ class _HomeScreenState extends State<HomeScreen> {
     return new Scaffold(
       appBar: GradientAppBar(
         title: Text('Welcome, Kashish!'),
-        backgroundColorStart: Colors.lightGreen,
-        backgroundColorEnd: Colors.greenAccent[700],
+        backgroundColorStart: Colors.lightBlue[900],
+        backgroundColorEnd: Colors.blue[900],
       ),
       body: Container(
-        decoration: new BoxDecoration(
-          image: DecorationImage(
-           image: ExactAssetImage('images/home_image_grasshopperx.jpeg'),
-          )
-        ),
+        color: Colors.indigo[900],
         child: ListView(
 
           children: <Widget>[
             Padding(
               padding: const EdgeInsets.symmetric(vertical: 8.0, horizontal: 0.0),
               child: Container(
-                height: 100,
-                color: Colors.lightGreen[900],
+                height: 50,
+                color: Colors.white70,
                 child: const Center(child: Text('Entry A')),
               ),
             ),
@@ -35,7 +31,7 @@ class _HomeScreenState extends State<HomeScreen> {
               padding: const EdgeInsets.symmetric(vertical: 8.0, horizontal: 0.0),
               child: Container(
                 height: 100,
-                color: Colors.lightGreen[800],
+                color: Colors.white70,
                 child: const Center(child: Text('Entry B')),
               ),
             ),
@@ -43,7 +39,7 @@ class _HomeScreenState extends State<HomeScreen> {
               padding: const EdgeInsets.symmetric(vertical: 8.0,horizontal: 0.0),
               child: Container(
                 height: 100,
-                color: Colors.lightGreen[700],
+                color: Colors.white70,
                 child: const Center(child: Text('Entry C')),
               ),
             ),
@@ -51,7 +47,7 @@ class _HomeScreenState extends State<HomeScreen> {
               padding: const EdgeInsets.symmetric(vertical: 8.0, horizontal: 0.0),
               child: Container(
                 height: 100,
-                color: Colors.lightGreen[600],
+                color: Colors.white70,
                 child: const Center(child: Text('Entry D')),
               ),
             ),
@@ -59,7 +55,7 @@ class _HomeScreenState extends State<HomeScreen> {
               padding: const EdgeInsets.symmetric(vertical: 8.0, horizontal: 0.0),
               child: Container(
                 height: 100,
-                color: Colors.lightGreen[500],
+                color: Colors.white70,
                 child: const Center(child: Text('Entry E')),
               ),
             ),
@@ -67,7 +63,7 @@ class _HomeScreenState extends State<HomeScreen> {
               padding: const EdgeInsets.symmetric(vertical: 8.0, horizontal: 0.0),
               child: Container(
                 height: 100,
-                color: Colors.lightGreen[400],
+                color: Colors.white70,
                 child: const Center(child: Text('Entry F')),
               ),
             ),
@@ -75,7 +71,7 @@ class _HomeScreenState extends State<HomeScreen> {
               padding: const EdgeInsets.symmetric(vertical: 8.0, horizontal: 0.0),
               child: Container(
                 height: 100,
-                color: Colors.lightGreen[300],
+                color: Colors.white70,
                 child: const Center(child: Text('Entry G')),
               ),
             ),

@@ -1,6 +1,8 @@
 # grasshopperx
 
-Built in Flutter and iInspired by the app by Google - Grasshopper.
+Built in **Flutter** and Inspired by **Google** - _Grasshopper_.
+
+![](scgif.gif)
 
 ## Getting Started
 
